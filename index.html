@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PavlovskCraft — Minecraft-сервер с модами</title>
+<meta name="description" content="PavlovskCraft: сервер Minecraft 1.21.1 с модами в духе vanilla plus. Механизмы, магия, приключения. Скачай лаунчер и заходи.">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+<div id="snow" aria-hidden="true"></div>
+<nav>
+  <div class="in">
+    <a class="brand" href="#top">PAVLOVSK CRAFT</a>
+    <div class="links">
+      <a href="#about">О сервере</a>
+      <a href="#start">Как начать</a>
+      <a href="guides.html">Гайды</a>
+      <a href="#faq">Вопросы</a>
+      <a class="cta" href="#download">Скачать</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div class="ascii-header">
+    <div class="ascii-art" id="titleArt" title="PAVLOVSK CRAFT"><div class="art-word"><span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░</span>              <span class="o">░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░</span>                          <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░</span>              <span class="o">░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>  <span class="o">░░░░░░░░░░</span>              <span class="o">░░░░░░░░░░</span>
+        <span class="o">░░</span><span class="h">██████████████████████████████</span><span class="o">░░░░░░</span><span class="h">██████████████████████████████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░░░░</span>            <span class="o">░░</span><span class="h">██████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░░░░</span>                        <span class="o">░░</span><span class="h">██████████████████████████████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░░░░</span>            <span class="o">░░</span><span class="h">██████</span><span class="o">░░░░░░</span><span class="h">██████████████████████████████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░░░░</span>            <span class="o">░░</span><span class="h">██████</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>                      <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="h">██████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="h">██████████████████</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="h">██████████████████</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="h">████████████████████████</span><span class="o">░░░░░░</span><span class="f">██████</span><span class="h">████████████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████████████████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░</span>  <span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░</span>  <span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="h">██████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="h">██████</span><span class="o">░░░░░░</span><span class="h">██████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="h">██████</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span> <span class="o">░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░░░░░░░</span>  <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span> <span class="o">░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="h">██████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="f">██████</span><span class="h">████████████████████████</span><span class="o">░░░░░░</span><span class="f">██████</span><span class="h">██████████████████</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="h">██████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="h">████████████████████████</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="h">██████</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>     <span class="o">░░░░</span><span class="e">▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>     <span class="o">░░░░</span><span class="e">▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>     <span class="o">░░░░</span><span class="e">▓▓▓</span><span class="f">██████</span><span class="e">▓▓</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>       <span class="o">░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span>    <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>       <span class="o">░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span>    <span class="o">░░</span><span class="f">██████████████████████████████</span><span class="e">▓▓▓▓</span><span class="o">░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>       <span class="o">░░░░░</span><span class="f">██████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>                      <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>          <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>                       <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>           <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░░░░░░░░░</span>                         <span class="o">░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span> <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span> <span class="o">░░░░░░░░░░░</span>             <span class="o">░░░░░░░░░░░</span></div><div class="art-word art-word-sub"><span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>    <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>
+        <span class="o">░░</span><span class="h">████████████████████</span><span class="o">░░░░</span><span class="h">████████████████</span><span class="o">░░░░</span>  <span class="o">░░</span><span class="h">████████████████████</span><span class="o">░░░░</span><span class="h">████████████████████</span><span class="o">░░░░</span><span class="h">████████████████████</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">████████████████████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████████████████</span><span class="e">▓▓</span><span class="o">░░░░░░</span><span class="f">████████████████████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████████████████████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="h">████</span><span class="o">░░░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░</span><span class="f">████</span><span class="h">████████████</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="f">████</span><span class="h">████████████</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="h">████████████</span><span class="o">░░░░░░░░░░░░░░░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>            <span class="o">░░</span><span class="f">████████████████</span><span class="e">▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓</span><span class="f">████████████████████</span><span class="e">▓▓▓▓</span><span class="f">████████████████</span><span class="e">▓▓</span><span class="o">░░░░</span>        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>            <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░</span>        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████</span><span class="h">████████████████</span><span class="o">░░░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░</span><span class="e">▓▓▓</span><span class="h">████</span><span class="o">░░░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░░░░░░░░░░░░░</span>        <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░</span><span class="f">████████████████████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span> <span class="o">░░░░</span><span class="e">▓</span><span class="f">████</span><span class="e">▓▓</span><span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>                    <span class="o">░░</span><span class="f">████</span><span class="e">▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>   <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>    <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>                    <span class="o">░░░</span><span class="e">▓▓▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░░</span><span class="e">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░</span>     <span class="o">░░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░</span>     <span class="o">░░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░</span>                     <span class="o">░░░░</span><span class="e">▓▓▓▓▓</span><span class="o">░░</span>
+        <span class="o">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>       <span class="o">░░░░░░░░░░░░░░░░░</span>       <span class="o">░░░░░░░░░░░░░░░░░</span>                       <span class="o">░░░░░░░░░</span></div></div>
+      <div class="splash" id="splash">Пинг до Барнаула: 2мс!</div>
+    </div>
+    <p class="tagline">Minecraft-сервер с модами<small>1.21.1 · NeoForge · свой лаунчер</small></p>
+    <div class="btn-row">
+      <a class="btn big" href="#download">Скачать лаунчер</a>
+      <a class="btn ghost" href="guides.html">Гайды</a>
+    </div>
+  </header>
+
+  <div class="rule" aria-hidden="true">================================================== |x| ==================================================</div>
+
+  <section class="box" id="news">
+    <span class="chip">Новости</span>
+    <p class="prompt"><span class="ok">ОБНОВЛЕНИЕ 4.2</span> — 26.10.2026</p>
+    <p class="prompt">Новая система авторизации, косметика и мебель!</p>
+    <p class="prompt dim">Книга квестов: 14 глав и 168 заданий, награды — изумруды.</p>
+  </section>
+
+  <section class="box" id="about">
+    <span class="chip">О сервере</span>
+    <p>Привычное выживание, как в ванильном Minecraft, только с модами: механизмы, магия, новые биомы, боссы, еда и уют. Играй как нравится: строй, исследуй, торгуй или просто готовь для друзей.</p>
+    <div class="grid">
+      <div class="card"><h4>Механизмы</h4><p>Create, Connected и Copycats+. Шестерёнки, конвейеры и автоматические фермы.</p></div>
+      <div class="card"><h4>Небо и физика</h4><p>Корабли, воздушные шары и вездеходы на настоящей физике (Aeronautics, Simulated, Sable).</p></div>
+      <div class="card"><h4>Магия и снаряжение</h4><p>Iron's Spells, Apotheosis, самоцветы и боссы, которые приходят сами.</p></div>
+      <div class="card"><h4>Приключения</h4><p>Данжи YUNG's, Deeper and Darker, Alex's Mobs, Luminous, Нижний мир и Край.</p></div>
+      <div class="card"><h4>Кухня и уют</h4><p>Фермы, пекарни, вино, пиво и чай, мебель и декор — дом, в который хочется вернуться.</p></div>
+      <div class="card"><h4>Экономика</h4><p>Валюта сервера — изумруды. Торгуй, выполняй квесты, покупай косметику и мебель.</p></div>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Приваты</span>
+      <span class="tag">Квесты FTB</span>
+      <span class="tag">Косметика и мебель</span>
+      <span class="tag">Фото Exposure</span>
+      <span class="tag">Windows и macOS</span>
+    </div>
+  </section>
+
+  <section class="box" id="guides">
+    <span class="chip">Что тебе интересно?</span>
+    <p>Выбери тему — и получишь короткий гайд: что это, с чего начать и что можно сделать.</p>
+    <div class="quick"><a href="guides.html#first"><b>Я новичок</b><span>С чего начать в мире</span></a><a href="guides.html#create"><b>Хочу механизмы</b><span>Create и автоматизация</span></a><a href="guides.html#spells"><b>Хочу магию</b><span>Заклинания и школы</span></a><a href="guides.html#farm"><b>Хочу готовить</b><span>Ферма, кухня, выпечка</span></a><a href="guides.html#look"><b>Хочу нарядиться</b><span>Шляпы, рюкзаки, шарики</span></a><a href="guides.html#beasts"><b>Хочу боссов</b><span>Легендарные звери</span></a><a href="guides.html#fly"><b>Хочу летать</b><span>Корабли и воздушные шары</span></a><a href="guides.html#claim"><b>Хочу приват</b><span>Как защитить дом</span></a><a href="guides.html#warps"><b>Хочу варп</b><span>Своя точка и заработок</span></a></div>
+    <div class="btn-row"><a class="btn" href="guides.html">Все гайды (26)</a></div>
+  </section>
+
+  <section class="box" id="download">
+    <span class="chip">Скачать лаунчер</span>
+    <p>Лаунчер сам скачает игру и все моды, обновит сборку и подключит к серверу. Ничего настраивать не нужно.</p>
+    <div class="grid">
+      <div class="card">
+        <h4>Windows</h4>
+        <p>Один файл <code>PavlovskCraft.exe</code> — запусти, установка не требуется.</p>
+        <a class="btn" data-dl="win" href="#">Скачать .exe</a>
+      </div>
+      <div class="card">
+        <h4>macOS · Apple Silicon</h4>
+        <p>Для Mac на чипах M1, M2, M3, M4. Файл <code>.dmg</code>, перетащи в «Программы».</p>
+        <a class="btn" data-dl="mac-arm" href="#">Скачать .dmg</a>
+      </div>
+      <div class="card">
+        <h4>macOS · Intel</h4>
+        <p>Для старых Mac на процессорах Intel. Файл <code>.dmg</code>.</p>
+        <a class="btn" data-dl="mac-intel" href="#">Скачать .dmg</a>
+      </div>
+    </div>
+    <p class="dim" style="margin-top:14px">Не работает кнопка? Все версии лаунчера лежат на <a data-dl="all" href="#">странице релизов</a>.</p>
+
+    <h3>Какую сборку выбрать</h3>
+    <ul>
+      <li><span class="ok">FULL</span> — полная графика, для мощных компьютеров и видеокарт.</li>
+      <li><span class="ok">LITE</span> — облегчённая сборка для слабых ПК и ноутбуков.</li>
+    </ul>
+    <p class="dim">Сомневаешься — начни с LITE. Сменить сборку можно в лаунчере в любой момент.</p>
+
+    <h3>Если система ругается при запуске</h3>
+    <ul>
+      <li><b>Windows:</b> нажми «Подробнее» → «Выполнить в любом случае». Файл не подписан платным сертификатом, поэтому Windows осторожничает.</li>
+      <li><b>macOS:</b> нажми на приложение правой кнопкой → «Открыть» → «Открыть». Один раз, дальше запускается как обычно.</li>
+    </ul>
+  </section>
+
+  <section class="box" id="start">
+    <span class="chip">Как начать</span>
+    <ol class="steps">
+      <li><b>Скачай лаунчер</b> под свою систему и запусти его.</li>
+      <li><b>Введи ник</b> — латинские буквы, цифры и «_», от 3 до 16 символов.</li>
+      <li><b>Выбери сборку</b> FULL или LITE и нажми «ИГРАТЬ». Первый запуск скачает игру — подожди, это один раз.</li>
+      <li><b>Зарегистрируйся в игре.</b> При первом входе откроется окно авторизации: придумай пароль (не короче 8 символов). На вход даётся 60 секунд.</li>
+      <li><b>Открой книгу квестов</b> (клавишу «Открыть квесты» нужно назначить в настройках управления) и следуй главе «1. С чего начать».</li>
+    </ol>
+    <p class="dim">Пароль знаешь только ты. Не сообщай его никому, даже друзьям.</p>
+    <div class="btn-row"><a class="btn ghost" href="guides.html#first">Первые шаги в мире</a></div>
+  </section>
+
+  <section class="box" id="faq">
+    <span class="chip">Вопросы</span>
+    <details>
+      <summary>Игра не запускается</summary>
+      <div class="body"><p>Нажми в лаунчере «Обновить сборку» — это скачает всё заново. Если не помогло, нажми «Скопировать лог» и пришли его администратору.</p></div>
+    </details>
+    <details>
+      <summary>Не пускает на сервер</summary>
+      <div class="body"><p>Проверь, что лаунчер обновлён и сборка актуальна (кнопка «Обновить сборку»). Убедись, что ник написан латиницей и ты вводишь пароль в течение 60 секунд.</p></div>
+    </details>
+    <details>
+      <summary>Забыл пароль</summary>
+      <div class="body"><p>Напиши администратору сервера — он поможет сбросить пароль.</p></div>
+    </details>
+    <details>
+      <summary>Игра тормозит</summary>
+      <div class="body"><p>Выбери сборку LITE и посмотри <a href="guides.html#lite">гайд для слабых компьютеров</a>.</p></div>
+    </details>
+    <details>
+      <summary>Работает ли на Mac?</summary>
+      <div class="body"><p>Да, есть версия лаунчера для Mac на Apple Silicon (M1–M4) и на Intel. Если игра не запускается, пришли лог из лаунчера.</p></div>
+    </details>
+    <details>
+      <summary>Это безопасно?</summary>
+      <div class="body"><p>Лаунчер открыт: его исходный код лежит на <a data-dl="repo" href="#">GitHub</a>, можно посмотреть, что он делает.</p></div>
+    </details>
+  </section>
+
+  <footer>
+    <p>PavlovskCraft · не является продуктом Mojang или Microsoft</p>
+    <p><a data-dl="repo" href="#">Исходный код лаунчера</a> · <a href="guides.html">Гайды</a> · <a href="#top">Наверх ↑</a></p>
+  </footer>
+</div>
+
+<script src="js/site.js"></script>
+</body>
+</html>
